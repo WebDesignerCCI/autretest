@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Le meilleur site d'actualités sur la tomate. Venez découvrir le potager.">
+    <title>Site d'actualités sur la tomate</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script defer type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+
+
+
+    <main class="contact_main">
+        <section class="section_contact section_contact0">
+            <div class="coordonnees_ets">
+                <div class="nom_ets">
+                    Nom de l'entreprise
+                </div>
+                <div class="adresse">
+                    <div class="adresse_line adresse1">2, rue des Alouettes</div>
+                    <div class="adresse_line adresse2">97200 PàP</div>
+                    <div class="adresse_line adresse3">France</div>
+                </div>
+            </div>
+            <div class="maps_container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2599.1922368841833!2d6.171071615691779!3d49.348509979338466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479524db8ee2694f%3A0xc057ed3aff8ad8b8!2s2%20Boulevard%20Henri%20Becquerel%2C%2057970%20Yutz!5e0!3m2!1sfr!2sfr!4v1583317521030!5m2!1sfr!2sfr"
+                    frameborder="0" style="border:0;" allowfullscreen="">
+                </iframe>
+            </div>
+            <div class="liens_directs_contact">
+                <div class="lien_direct_contact">
+                    <a href="tel:+33768423807">
+                        <div>
+                            <img class="icone_lien" src="img/phone.png" alt="icône de téléphone">
+                        </div>
+                        <div class="link_text">Appelez-nous</div>
+                    </a>
+                </div>
+                <div class="lien_direct_contact">
+                    <a href="mailto:chloe.seiler.pro@gmail.com">
+                        <div>
+                            <img class="icone_lien" src="img/email.png" alt="icône de mail">
+                        </div>
+                        <div class="link_text">Ecrivez-nous</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_contact section_contact1">
+            <form action="" method="post">
+                <div class="field_container">
+                    <label for="civilite">Civilité</label>
+                    <select name="civilite" id="civilite">
+                        <option value="dame">Madame</option>
+                        <option value="sieur">Monsieur</option>
+                        <option value="nongendered">Non défini</option>
+                    </select>
+                </div>
+
+                <div class="field_container">
+                    <label for="nometprenom">Nom et prénom</label>
+                    <input type="text" name="nometprenom" placeholder="Votre nom et prénom">
+                </div>
+
+                <div class="field_container">
+                    <label for="adressemel">Adresse mail</label>
+                    <input type="email" name="adressemel" placeholder="Votre mail">
+                </div>
+
+                <div class="field_container">
+                    <label for="telephone">Numéro de téléphone</label>
+                    <input type="tel" name="telephone" placeholder="Votre numéro de téléphone">
+                </div>
+
+                <div class="field_container">
+                    <textarea placeholder="Votre message" name="corpsdumessage" id="" cols="30" rows="5"></textarea>
+                </div>
+
+                <div class="field_container">
+                    <input type="checkbox" name="case">
+                    <label for="case">En envoyant ce formulaire, j'accepte que les données transmises soient traitées dans le cadre de ma demande.</label>
+                </div>
+
+                <div class="field_container">
+                    <input type="submit" value="ENVOYER">
+                </div>
+            </form>
+        </section>
+
+        <section class="section_contact section_contact2">
+            <form action="" method="post">
+                <div class="newsletter_fieldset">
+                    <label for="newslettermail">Recevez notre newsletter</label>
+                    <input type="email" name="newslettermail" placeholder="Votre adresse mail">
+                </div>
+
+                <div class="newsletter_fieldset">
+                    <input type="submit" value="Je veux recevoir la newsletter!">
+                </div>
+            </form>
+        </section>
+
+        <section class="section_contact section_contact3">
+            <div>
+                <a href="https://www.facebook.fr" target="_blank">
+                    <img src="img/fb.png" alt="logo de facebook">
+                </a>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+</body>
+
+</html>

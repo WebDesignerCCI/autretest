@@ -1,0 +1,402 @@
+/* style du header : 
+- couleur de fond du header : mettre un dégradé 
+- centrer la nav dans la header (pour mieux voir : mettre une border sur la nav)
+- disposer les li horizontalement
+- enlever les puces 
+- choisir et appliquer une police de caractère (une typo) 
+- enlever le soulignement 
+
+le header doit être collé en haut et sur les côtés de la page html
+
+- donner une hauteur et une bordure au main et au footer (hauteur minimum = 60vh)
+- faire en sorte que le header reste en haut de page quand on scrolle : propriété css "position"
+*/
+
+* {
+    font-family: 'Lato'!important;
+    max-width: 100vw;
+}
+
+body {
+    margin: 0;
+    position: relative;
+}
+
+.element {
+    color: blue;
+}
+
+header {
+    padding: 20px 0;
+    position: fixed;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 3;
+}
+
+nav {
+    width: 80%;
+}
+
+main {
+    padding-top: 140px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    text-align: center;
+    width: 25%;
+}
+
+a {
+    font-family: 'Lato', sans-serif;
+    font-size: 2em;
+    text-decoration: none;
+    color: black;
+}
+
+.parent {
+    border: 2px solid salmon;
+    position: relative;
+}
+
+.enfant {
+    border: 2px solid green;
+    height: 40vh;
+    background-color: yellow;
+    position: absolute;
+}
+
+.parent {
+    position: relative;
+    height: 70px;
+    width: 100px;
+}
+
+.div1 {
+    height: 70px;
+    width: 100px;
+    background-color: green;
+    position: absolute;
+    z-index: 2;
+}
+
+.div1bis {
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 70px;
+    width: 100px;
+    z-index: 3;
+}
+
+.div2 {
+    height: 70px;
+    width: 100px;
+    background-color: blue;
+}
+
+.div3 {
+    height: 70px;
+    width: 100px;
+    background-color: purple;
+}
+
+.div4 {
+    height: 70px;
+    width: 100px;
+    background-color: red;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    max-height: 150vh;
+}
+
+.articles_container {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: space-around;
+    padding: 70px;
+    width: 80%;
+}
+
+article {
+    width: 25%;
+    background-color: white;
+    position: relative;
+}
+
+.date {
+    position: absolute;
+    background-color: #D04F42;
+    padding: 10px 15px;
+    height: 20px;
+    top: -15px;
+    color: white;
+    line-height: 20px;
+    z-index: 2;
+}
+
+.article_img {
+    max-width: 100%;
+}
+
+.title_container {
+    padding: 30px 30px 0 30px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 2em;
+    color: #D04F42;
+}
+
+.dash {
+    background-color: #59A9A5;
+    height: 3px;
+    width: 20%;
+    margin-left: 30px;
+}
+
+.extract_container {
+    padding: 0 30px 30px 30px;
+}
+
+.paragraph {
+    letter-spacing: 1px;
+    line-height: 30px;
+    height: 70px;
+    overflow: hidden;
+}
+
+.paragraph:hover {
+    height: auto;
+    transition: all 500ms ease-in-out;
+}
+
+.read_more_text {
+    letter-spacing: 1px;
+    height: 100%;
+    line-height: 40px;
+    margin-left: 10%;
+}
+
+.fas {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_container {
+    overflow: hidden;
+}
+
+.img_container:hover .article_img {
+    transform: scale(1.1);
+    transition: all 300ms ease-in-out;
+}
+
+.btn_container {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.btn_container>a {
+    border: 2px solid #59A9A5;
+    color: #D04F42;
+    font-size: 1em;
+    display: flex;
+    width: 100%;
+    height: 60px;
+}
+
+.btn_content {
+    padding: 10px 15px;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 40px;
+}
+
+.blue_hover {
+    height: 60px;
+    background-color: #59A9A5;
+    width: 100%;
+    position: absolute;
+    right: 100%;
+}
+
+.btn_container>a:hover .blue_hover {
+    right: -2px;
+    transition: all 300ms ease-in-out;
+}
+
+.btn_container>a:hover .read_more_text {
+    display: none;
+    transition: all 300ms ease-in-out;
+}
+
+.jumbotron {
+    height: 90vh;
+    position: relative;
+    padding-top: 140px;
+}
+
+.yellow_bgc {
+    height: 100%;
+    width: 100%;
+    background-color: #D04F42;
+    position: absolute;
+    transform: translateX(-100vw);
+    animation: go_yellow 1s ease-in-out forwards;
+}
+
+.title {
+    color: #59A9A5;
+    font-family: 'Lato';
+    letter-spacing: 1px;
+    margin-top: 100px;
+    margin-left: 300px;
+    position: absolute;
+    transform: translateY(100px);
+    animation: show_title 800ms 800ms ease-in-out forwards;
+    font-size: 3em;
+    opacity: 0;
+}
+
+.under_title {
+    height: 3px;
+    width: 50px;
+    background-color: #59A9A5;
+}
+
+@keyframes go_yellow {
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes show_title {
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/* :hover */
+
+header nav ul li a span {
+    display: inline-block;
+}
+
+li:hover .span0 {
+    animation: wave_animation 500ms forwards;
+}
+
+li:hover .span1 {
+    animation: wave_animation 500ms 300ms forwards;
+}
+
+li:hover .span2 {
+    animation: wave_animation 500ms 600ms forwards;
+}
+
+li:hover .span3 {
+    animation: wave_animation 500ms 900ms forwards;
+}
+
+li:hover .span4 {
+    animation: wave_animation 500ms 1200ms forwards;
+}
+
+li:hover .span5 {
+    animation: wave_animation 500ms 1500ms forwards;
+}
+
+li:hover .span6 {
+    animation: wave_animation 500ms 1800ms forwards;
+}
+
+@keyframes wave_animation {
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.contact_main {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.coordonnees_ets {
+    margin-bottom: 15vh;
+}
+
+.nom_ets {
+    font-weight: bold;
+}
+
+.nom_ets,
+.adresse_line {
+    text-align: center;
+}
+
+.maps_container {
+    padding: 0 5vw;
+}
+
+.maps_container>iframe {
+    max-width: 100%;
+}
+
+.liens_directs_contact {
+    margin-top: 15vh;
+}
+
+.lien_direct_contact a {
+    display: flex;
+    justify-content: space-around;
+    height: 30px;
+}
+
+.lien_direct_contact a * {
+    height: 100%;
+}
+
+.icone_lien {
+    width: auto;
+    display: inline-block;
+}
+
+.link_text {
+    text-transform: uppercase;
+    height: 100%;
+    line-height: 30px;
+}
+
+
+/* ici, je décide de changer le style pour les écrans de plus de 500 pixels de large :  */
+
+@media (min-width: 500px) {
+    /* dans cette situation, le body change de couleur de fond */
+    body {
+        background-color: salmon;
+    }
+}
